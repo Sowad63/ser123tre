@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %} Shop {% endblock %}
+{% block body %}
+
+    <div class="container" style="margin:auto">
+
+        <h4><b>Shelves in Shop</b></h4>
+
+    </div>
+
+    <div class="container" style="padding: 24px">
+
+        {% for shop in shops %}
+
+            <div class="container">
+                <div class="container-fluid">
+                    <h4>
+                        <img src="https://media.istockphoto.com/photos/books-on-display-in-the-corner-of-a-second-hand-bookstore-picture-id1129874863"
+                             alt="" width="80" height="80"
+                             class="d-inline-block align-text-top">
+                        {{ shop }}
+                    </h4>
+                </div>
+            </div>
+
+            <div class="container" style="padding: 20px">
+                <div class="row align-items-start">
+                    {% for _ in range(4) %}
+                        <div class="col">
+                            <div class="card w-50">
+                                <div class="card-body">
+                                    <h5 class="card-title">BookStore</h5>
+                                    <p class="card-text">Here goes Description</p>
+                                    <a href="#" class="btn btn-success">Go</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+{% endblock %}

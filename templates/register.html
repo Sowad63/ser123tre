@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block title %} Register {% endblock %}
+{% block body %}
+
+    <div class="container" style="margin: auto;width: 50%;padding: 30px;">
+        <div class="row">
+            <div class=".col-md-4">
+                <img src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30"
+                     height="24" >
+            </div>
+            <div class=".col-md-4 .offset-md-4">
+                <h3><b>Join Us & Enlighten Yourself</b></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container align-content-md-center" style="margin: auto;
+width: 60%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);padding: 28px">
+
+        <form>
+            <div class="mb-3">
+                <label for="user_name" class="form-label">Username</label>
+                <input type="text" class="form-control" id="user_name" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="re_exampleInputPassword1" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="re_exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+                <select class="form-select form-select-lg" aria-label=".form-select-sm example">
+                    <option selected>Your Favourite type of Book</option>
+                    <option value="1">Adventure</option>
+                    <option value="2">Classic</option>
+                    <option value="3">Fiction</option>
+                    <option value="4">Thriller</option>
+                    <option value="5">Novel</option>
+                    <option value="6">History</option>
+                    <option value="7">Politics</option>
+                    <option value="8">Article</option>
+                    <option value="3">Academics</option>
+                    
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+
+{% endblock %}

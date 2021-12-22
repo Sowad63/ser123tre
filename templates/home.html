@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <div class="container" style="margin: auto">
+        <div class="row g-3 align-items-center" style="margin: auto;
+width: 60%;">
+            <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label" style="font-size: 24px"><b>Search Your
+                    Book</b></label>
+            </div>
+            <div class="col-auto">
+                <input type="text" id="inputPassword6" class="form-control form-control-lg"
+                       aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-auto">
+    <span id="passwordHelpInline" class="form-text">
+     <button type="submit" class="btn btn-primary">Search</button>
+    </span>
+            </div>
+            <div class="col-auto">
+                <div class="btn-group">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                        Filters
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <button class="dropdown-item" type="button">By Authors</button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item" type="button">By Rating</button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item" type="button">By Genre</button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item" type="button">By Release Date</button>
+                        </li><li>
+                            <button class="dropdown-item" type="button">By Publication</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
